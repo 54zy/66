@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>武汉理工大学网络文化节</title>
+</head>
+<link rel="stylesheet" href="css/showpage.css">
+<script src="script/jquery.min.js" type="text/javascript"></script>
+<script>
+     $(function(){
+		 var $iconleft = $("<img class='iconleft' src='images/left.png'>");
+	     var $iconright = $("<img class='iconright' src='images/right.png'>");
+		 //鼠标悬停添加两个icon
+		 
+		 var nowText  = "";
+		  $("#colA_list #colA_ul li").each(function(index,ele){
+			  if($(this).children().length>1)  nowText = $(this).text().trim();
+
+		  })
+		  
+		 $("#colA_list #colA_ul li").mouseover(function(){
+			 if($(this).children().length==1){
+				 $(this).append($iconright)
+		         $(this).prepend($iconleft)
+			 }
+
+		 }).mouseout(function(){
+			 if($(this).text().trim()!=nowText){
+				 $(this).children("img").remove()
+				// alert($(this).children("img").length)
+			 }
+		 })
+     })	
+	
+</script>
+<body>
+<div id="topWrapper"> <img src="images/top_back.jpg" alt="网络文化节">
+  <div id="nav">
+    <ul id="ul_nav" class="box">
+      <li class="menu_top_li selected"><a href="#" class="topa">首页</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">赛事新闻</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">公告通知</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">微电影作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">动漫作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">摄影作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">网络文章</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">校园原创歌曲作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">公益广告作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">优秀工作案例</a></li>
+    </ul>
+  </div>
+</div>
+<div id="contentWrapper" class="box">
+  <div id="colA">
+    <div id="colA_head">
+      <p>新闻公告</p>
+    </div>
+    <div class="connecta"></div>
+    <div id="colA_list">
+      <ul id="colA_ul">
+        <li><img class="iconleft" src="images/left.png" alt=""><a href="#">赛事新闻</a><img class="iconright" src="images/right.png" alt=""></li>
+        <br>
+        <li><a href="#">公告通知</a></li>
+        <br>
+        <li><a href="#">公告通知</a></li>
+        <br>
+      </ul>
+    </div>
+    <div class="connect"></div>
+    <div id="colA_empty"></div>
+  </div>
+  <div id="colB">
+    <div id="bar">
+      <h5>当前位置：首页 &gt; 新闻公告 &gt; 赛事新闻</h5>
+    </div>
+    <div id="contentInf">
+      <div id="singleNews">
+        <div id="titleouter">
+          <div id="title">
+            <h1 class="header">关于举行武汉理工大学首届学生网络文化节的通知</h1>
+            <h2 class="time">发布日期：2015-11-26 </h2>
+          </div>
+        </div>
+        <p>一、目的意义
+          为全面贯彻落实党的十九大精神、全国高校思想政治工作会议精神和《中共中央国务院关于加强和改进新形势下高校思想政治工作的意见》，鼓励引导广大师生积极参与网络文化作品创作生产，唱响网上好声音，传播网络正能量，全面提升网络素养，争做校园好网民；创新网络思想政治教育，推动思想政治工作联网上线，增强工作亲和力和针对性，促进新媒体新技术在思想政治工作中的深度应用，着力培育一批网络名师名编，推出一批网络名篇名作，推广一批网络宣传思想教育工作典型经验，共同守护好网上精神家园。
+          二、活动主题
+          传播网络正能量、争做校园好网民（待定）
+          三、活动对象
+          全校师生、各二级党组织、校属各单位
+          四、活动时间
+          2018 年 5 月9日至 12 月 31日。
+          五、活动内容
+          本次文化节共征集微电影、动漫、摄影、网文、公益广告、校园歌曲、创新案例等 7 类作品。征集时间：2018 年 5月20 日至7月 6 日。
+          （1）网络文章：是指在网络上发表的解读党和国家的方针政策、研究当前经济社会发展的阶段性特征、阐释师生关心关注的思想理论热点难点问题、厘清错误思潮和观点、普及网络法律法规、倡导网络文明、提升网络素养等方面的文章；作品以传承和弘扬社会主义核心价值观为导向，从传播传统文化，抒发爱国情怀，树立报国志向，解析社会热点，倡导网络文明，分享成长故事等角度，撰写内容健康向上、有吸引力、有感染力的网络文章或网络文学作品，体裁不限，鼓励创新，学术论文、时政博文、文学作品、精要评论等都可，字数不超过5000字，允许在文章中配图表。（宣传部承办）
+          （2）微电影作品：呈现师生学习工作生活中的精彩故事，展示教职工教学育人风采和青年学生的青春气息，内容积极健康向上，遵守国家法律法规，传递正能量。作品须为AVI、MOV、MP4格式原始作品，分辨率不小于1920px×1080px。作品时长原则上在10分钟以内，以5分钟左右为宜。画面清晰，声音清楚，提倡标注字幕。每部作品作者限6人以内。（团委承办）
+          （3）动漫作品：以优秀传统文化元素为基础，融合新理念，运用新技术，创作贴近师生思想、学习、工作和生活实际，并在思想融入、情景设计、表达演绎、剪辑制作等方面具有较高的水平，体现正确价值导向，能够引发情感共鸣的优秀动漫作品。其中：漫画作品投稿作品为四格漫画或单幅插画，画稿要求基于A4尺寸（210mm×297mm）纸张创作的作品，画稿四周请保留各2cm空白，画面要求清晰、标明页数；基于计算机或移动设备的新媒体作品，应符合手机动漫行业标准等规范，提交电子图片格式要求为JPEG：RGB图，分辨率100 DPI（作品入选后，需另外提交TIFF文件），阅读顺序可根据个人习惯选择从左到右或从右到左，需要在作品首页注明；动画短片作品须为AVI、MOV、MP4格式原始作品，分辨率不小于1920px×1080px，作品时长原则上在10分钟以内，以5分钟左右为宜。（艺术与设计学院承办） </p>
+        <p>&nbsp; </p>
+      </div>
+    </div>
+    <table style="display: none; margin: 10px auto 0">
+      <tbody>
+        <tr>
+          <td colspan="7"><a id="lbtnFirstPage" disabled="disabled">页首</a> &nbsp;&nbsp; <a id="lbtnpritPage" disabled="disabled">上一页 </a> &nbsp;&nbsp; <a id="lbtnNextPage" disabled="disabled">下一页 </a> &nbsp;&nbsp; <a id="lbtnDownPage" disabled="disabled">页尾</a>&nbsp;&nbsp;&nbsp;&nbsp; </td>
+          <td colspan="4">第<span id="labPage">1</span>页/共<span id="LabCountPage">1</span>页 </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div id="footer">
+  <div class="content">
+    <p id="content1">Copyright&nbsp;©&nbsp;2018&nbsp;武汉理工大学经纬网</p>
+    <p id="content2">Powered&nbsp;By&nbsp;Token&nbsp;Team</p>
+  </div>
+</div>
+</body>
+</html>

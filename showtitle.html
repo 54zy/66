@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>武汉理工大学网络文化节</title>
+</head>
+<link rel="stylesheet" href="css/showpage.css">
+<script src="script/jquery.min.js" type="text/javascript"></script>
+<script>
+     $(function(){
+		 var $iconleft = $("<img class='iconleft' src='images/left.png'>");
+	     var $iconright = $("<img class='iconright' src='images/right.png'>");
+		 //鼠标悬停添加两个icon
+		 
+		 var nowText  = "";
+		  $("#colA_list #colA_ul li").each(function(index,ele){
+			  if($(this).children().length>1)  nowText = $(this).text().trim();
+
+		  })
+		  
+		 $("#colA_list #colA_ul li").mouseover(function(){
+			 if($(this).children().length==1){
+				 $(this).append($iconright)
+		         $(this).prepend($iconleft)
+			 }
+
+		 }).mouseout(function(){
+			 if($(this).text().trim()!=nowText){
+				 $(this).children("img").remove()
+				// alert($(this).children("img").length)
+			 }
+		 })
+     })	
+	
+</script>
+<body>
+<div id="topWrapper"> <img src="images/top_back.jpg" alt="网络文化节">
+  <div id="nav">
+    <ul id="ul_nav">
+      <li class="menu_top_li selected"><a href="#" class="topa">首页</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">赛事新闻</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">公告通知</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">微电影作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">动漫作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">摄影作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">网络文章</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">校园原创歌曲作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">公益广告作品</a></li>
+      <li class="menu_top_li"><a href="#" class="topa">优秀工作案例</a></li>
+    </ul>
+  </div>
+</div>
+<div id="contentWrapper" class="box">
+  <div id="colA">
+    <div id="colA_head">
+      <p>新闻公告</p>
+    </div>
+    <div class="connecta"></div>
+    <div id="colA_list">
+      <ul id="colA_ul">
+        <li><img class="iconleft" src="images/left.png" alt=""><a href="#">赛事新闻</a><img class="iconright" src="images/right.png" alt=""></li>
+        <br>
+        <li><a href="#">公告通知</a></li>
+        <br>
+        <li><a href="#">公告通知</a></li>
+        <br>
+      </ul>
+    </div>
+    <div class="connect"></div>
+    <div id="colA_empty"></div>
+  </div>
+  <div id="colB">
+    <div id="bar">
+      <h5>当前位置：首页 &gt; 新闻公告 &gt; 赛事新闻</h5>
+    </div>
+    <div id="contentInf">
+      <table id="contentList">
+        <tbody>
+          <tr>
+            <td><span><img src="images/dot.png"></span></td>
+            <td><a title=""  href="#">武汉理工大学关于举办首届学生网络文化节的通知</a></td>
+            <td class="list_time">2017-06-30</td>
+          </tr>
+          <tr>
+            <td><span><img src="images/dot.png"></span></td>
+            <td><a title=""  href="#">武汉理工大学关于举办首届学生网络文化节的通知</a></td>
+            <td class="list_time">2017-06-30</td>
+          </tr>
+          <tr>
+            <td><span><img src="images/dot.png"></span></td>
+            <td><a title=""  href="#">武汉理工大学关于举办首届学生网络文化节的通知</a></td>
+            <td class="list_time">2017-06-30</td>
+          </tr>          
+ 
+         
+        </tbody>
+      </table>
+    </div>
+    <table style="margin: 10px auto 0">
+      <tbody>
+        <tr>
+          <td colspan="7"><a id="lbtnFirstPage" disabled="disabled">页首</a> &nbsp;&nbsp; <a id="lbtnpritPage" disabled="disabled">上一页 </a> &nbsp;&nbsp; <a id="lbtnNextPage" disabled="disabled">下一页 </a> &nbsp;&nbsp; <a id="lbtnDownPage" disabled="disabled">页尾</a>&nbsp;&nbsp;&nbsp;&nbsp; </td>
+          <td colspan="4">第<span id="labPage">1</span>页/共<span id="LabCountPage">1</span>页 </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div id="footer">
+  <div class="content">
+    <p id="content1">Copyright&nbsp;©&nbsp;2018&nbsp;武汉理工大学经纬网</p>
+    <p id="content2">Powered&nbsp;By&nbsp;Token&nbsp;Team</p>
+  </div>
+</div>
+</body>
+</html>

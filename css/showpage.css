@@ -1,0 +1,290 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+body{
+	font-family:"Arial","微软雅黑","宋体";
+	background:#fff;
+	font-size:12px;
+	color:#666666;
+}
+ul{
+	list-style:none;
+}
+a{text-decoration:none; }
+
+/*去除链接虚框*/
+a,area { blr:expression(this.onFocus=this.blur()) } /* for IE */
+:focus { outline-style: none; } /* for Firefox，IE8.0等 */　
+a img{ border:0;}
+
+
+
+
+.box {
+	width: 64.8%;
+	margin-left: auto;
+	margin-right: auto;
+	/* [disabled]display: inline; */
+	min-width: 864px;
+}
+#topWrapper {
+	width: 100%;
+	min-width: 900px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: 0% 0%;
+	height: auto;
+	padding-top: auto;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	padding-bottom: auto;
+}
+
+#topWrapper img {
+	width: 100%;
+	display: block;
+}
+#topWrapper #nav #ul_nav {
+	overflow: hidden;
+}
+#nav {
+	overflow: hidden;
+	background-repeat: no-repeat;
+	width: 67.5%;
+	background-size: 100% 100%;
+	height: 53px;
+	background-image: url(../images/nav_back.jpg);
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 900px;
+}
+#nav #ul_nav .menu_top_li {
+	float: left;
+	height: 53px;
+}
+
+#nav #ul_nav .menu_top_li a {
+	display: block;
+	line-height: 53px;
+	/* [disabled]font-family: "微软雅黑"; */
+	font-size: 15px;
+	padding-left: 8px;
+	padding-right: 6px;
+	color: #FFFFFF;
+	/* [disabled]height: 38.6px; */
+}
+#topWrapper #nav #ul_nav {
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#nav #ul_nav .menu_top_li a:hover {
+	color: #BAE5FF;
+}
+
+
+#footer {
+	clear: both;
+	background-color: #4D7CBF;
+	height: 120px;
+	width: 100%;
+}
+#footer .content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #E8E8E8;
+	position: relative;
+	top: 36px;
+	margin-top: 27px;
+	font-size: 15px;
+}
+#footer .content #content1 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#footer .content #content2 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+#footer .content p {
+	display: block;
+}
+#contentWrapper {
+	overflow: hidden;
+	margin-top: 35px;
+}
+
+#colA {
+	width: 25%;
+	float: left;
+}
+#colA_head   {
+	height: 53px;
+	background-color: #7C9FD0;
+}
+#colA #colA_head p {
+	color: #FFFFFF;
+	text-align: center;
+	height: 53px;
+	line-height: 53px;
+	font-size: 20px;
+}
+
+#colA .connect {
+	background-image: url(../images/connect.jpg);
+	height: 8px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#colA .connecta {
+	background-image: url(../images/connecta.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 8px;
+}
+#colA #colA_list {
+	background-color: #7C9FD0;
+	/* [disabled]height: 77px; */
+}
+#colA #colA_empty {
+	background-color: #7C9FD0;
+	height: 110px;
+}
+#colA_ul li a {
+	color: #FFFFFF;
+}
+#colA_list #colA_ul li {
+	/* [disabled]width: auto; */
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	/* [disabled]max-width: 120px; */
+	height: 50px;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 50px;
+}
+
+
+#colA #colA_list #colA_ul {
+	text-align: center;
+	position: relative;
+}
+#colA #colA_list  {
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+.iconright {
+	margin-left: 4px;
+	height: 17px;
+	vertical-align: middle;
+
+}
+
+.iconleft   {
+	margin-right: 4px;
+	height: 17px;
+	vertical-align: middle;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#colB {
+	width: 71%;
+	/* [disabled]height: 100px; */
+	float: right;
+}
+
+
+#colB #bar h5 {
+	color: #888;
+	font-size: 12px;
+	font-weight: normal;
+	height: 30px;
+	line-height: 30px;
+}
+#colB #bar {
+	height: 33px;
+	border-bottom: 4px solid #e5e5e5;
+}
+#contentInf #singleNews .time {
+	text-align: center;
+    color: #666;
+    font-size: 12px;
+    font-weight: normal;
+
+}
+#contentInf #singleNews #title {
+	display: inline-block;
+	border-bottom: 3px solid #D8D8D8;
+}
+
+#contentInf #singleNews  {
+	font-size: 14px;
+	color: #666;
+	line-height: 30px;
+}
+#contentInf #singleNews #titleouter {
+	text-align: center;
+	margin-bottom: 15px;
+}
+#contentInf #singleNews .header {
+	padding-bottom: 10px;
+    margin: 20px 0 3px 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+}
+#colB #contentInf #contentList {
+	font-size: 14px;
+	width: 614px;
+}
+#colB #contentInf #contentList tbody  {
+	color: #666666;
+
+}
+#colB tr td a {
+	color: #666666;
+}
+td span img {
+	width: 12px;
+	height: 12px;
+	vertical-align: middle;
+}
+
+#colB tr td a:hover {
+	text-decoration: underline;
+}
+
+#colB tbody tr {
+	height: 32px;
+}
+.list_time {
+	text-align: right;
+}
