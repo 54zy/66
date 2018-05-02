@@ -1,33 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta charset="utf-8">
     <title>Test 1 - audio.js</title>
     <link href="css/video-js.css" rel="stylesheet">
-<script src="script/video.js"></script>
-    <style>
-      p { clear: both; }
-    </style>
+    <script src="script/jquery.min.js"></script>
+    <script src="script/video.js"></script>
+
+    <!-- If you'd like to support IE8 -->
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <link href="css/test.css" rel="stylesheet" type="text/css">
     <script src="audiojs/audio.min.js"></script>
     <script>
-      audiojs.events.ready(function() {
+//      audiojs.events.ready(function() {
+//        var as = audiojs.createAll();
+//      });
+		
+		
+		
+		function kk(src){
+			var s = "<video id='example_video_1' class='video-js vjs-default-skin'  poster='http://vjs.zencdn.net/v/oceans.png' controls preload='auto'><source src=" +src+" type='video/mp4'></video>";
+				
+			
+			$("#dd").click(function(){
+				var $vv = $(s);
+				
+				$("body").append($vv);
+				var player = videojs('example_video_1');	
+				
+			})
+		}
+		$(function(){
+			
+			//kk("http://vjs.zencdn.net/v/oceans.mp4")
+			$("#dd").click(function(){
+				
+				s = "<p>Load local file</p><audio preload='auto'><source src="+"mp3/aa.mp3"+"></audio>"
+				var $vv = $(s);
+				$("body").append($vv);
+				      audiojs.events.ready(function() {
         var as = audiojs.createAll();
       });
+			})
+		})
+		
+		
     </script>
-  </head>
-  <body>
+    </head>
+    <body>
 <!--
     <h1>audiojs.createAll()</h1>
     <p>Load from remote URL</p>
     <audio preload="auto">
       <source src="http://cdn02.cdn.gorillavsbear.net/wp-content/uploads/2010/11/gorilla-vs.-bear-november-2010.mp3">
     </audio>
--->
+--> 
 
+<!--
     <p>Load local file</p>
     <audio preload="auto">
       <source src="mp3/aa.mp3">
     </audio>
+-->
 
 <!--
     <p>Load failure (from source)</p>
@@ -35,9 +69,16 @@
       <source src="./mp3/juicyz.mp3">
     </audio>
 -->
-    
+<button id="dd">666</button>
+<!--
+<video id="example_video_1" class="video-js vjs-default-skin" controls autoplay preload="auto" width="640" height="264"  poster="http://vjs.zencdn.net/v/oceans.png">
+      <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+</video>
+-->
+<!--
     <video id="example_video_1" class="video-js vjs-default-skin" controls width="640" height="264">
- <source src="video/66.avi" type="video/mp4" />
+ <source src="video/oceans.mp4" type="video/mp4" />
 </video> 
-  </body>
+-->
+</body>
 </html>
