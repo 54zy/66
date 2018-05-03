@@ -27,6 +27,10 @@ a img{ border:0;}
 
 
 
+
+
+
+
 .box {
 	width: 64.8%;
 	margin-left: auto;
@@ -55,6 +59,13 @@ a img{ border:0;}
 }
 #topWrapper #nav #ul_nav {
 	overflow: hidden;
+	/*
+	text-align: justify;
+	text-align-last: justify;
+*/
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
 }
 #nav {
 	overflow: hidden;
@@ -67,26 +78,37 @@ a img{ border:0;}
 	margin-right: auto;
 	min-width: 900px;
 }
+
+
+
 #nav #ul_nav .menu_top_li {
 	float: left;
 	height: 53px;
 }
 
+
 #nav #ul_nav .menu_top_li a {
 	display: block;
 	line-height: 53px;
 	/* [disabled]font-family: "微软雅黑"; */
-	font-size: 15px;
+	font-size: 19px;
 	padding-left: 8px;
 	padding-right: 6px;
 	color: #FFFFFF;
 	/* [disabled]height: 38.6px; */
+	text-align: center;
 }
-#topWrapper #nav #ul_nav {
-	width: 96%;
-	margin-left: auto;
-	margin-right: auto;
+#ul_nav .menu_top_li.sss {
+	width: 9%;
 }
+#ul_nav .menu_top_li.ss {
+	width: 8%;
+}
+#ul_nav .menu_top_li.ssss {
+	width: 11%;
+}
+
+
 
 #nav #ul_nav .menu_top_li a:hover {
 	color: #BAE5FF;
@@ -132,15 +154,17 @@ a img{ border:0;}
 #contentWrapper #content_top #piclist {
 	width: 60%;
 	background-color: #FFFFFF;
-	height: 320px;
+	height: auto;
 	float: left;
+	overflow: hidden;
 }
 #contentWrapper #content_top {
 	overflow: hidden;
+	height: auto;
 }
 
 .carousel-inner .item img {
-	height: 320px;
+	height: auto;
 	width: 100%;
 }
 .carousel-control.left {  
@@ -181,15 +205,17 @@ white-space: nowrap; //文本不换行，这样超出一行的部分被截取，
 }
 #newAndNotice   {
 	width: 35%;
-	height: 320px;
+	height: 100%;
 	float: right;
+	overflow: hidden;
 }
 .newlist li  {
-	height: 25px;
 	padding-left: 7px;
+	/* [disabled]height: 211%; */
+	display: block;
 }
 .newlist li .line-limit-length {
-	line-height: 25px;
+	line-height: 229%;
 	color: #666666;
 }
 .panel_title .more  {
@@ -204,8 +230,7 @@ white-space: nowrap; //文本不换行，这样超出一行的部分被截取，
 }
 
 .newlist li span {
-	height: 25px;
-	line-height: 25px;
+	line-height: 225%;
 }
 
 
@@ -237,17 +262,19 @@ white-space: nowrap; //文本不换行，这样超出一行的部分被截取，
 	text-decoration: none;
 }
 #content_top #news {
-	height: 160px;
 	display: block;
+	height: 40%;
 }
 #newAndNotice   {
 }
 
 #content_top #notice {
-	height: 160px;
+	height: 40%;
 	display: block;
 }
 .panel1 .newlist {
+	height: 50%;
+
 
 
 }
